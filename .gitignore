@@ -5,3 +5,5 @@ redsocks2
 gen/
 .depend
 xnu/
+android/obj
+android/libs

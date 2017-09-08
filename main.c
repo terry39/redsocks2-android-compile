@@ -33,7 +33,7 @@
 
 extern app_subsys redsocks_subsys;
 extern app_subsys base_subsys;
-extern app_subsys redudp_subsys;
+//extern app_subsys redudp_subsys;
 extern app_subsys tcpdns_subsys;
 extern app_subsys autoproxy_app_subsys;
 extern app_subsys cache_app_subsys;
@@ -43,7 +43,7 @@ app_subsys *subsystems[] = {
     &redsocks_subsys,
     &autoproxy_app_subsys,
     &cache_app_subsys,
-    &redudp_subsys,
+//    &redudp_subsys,
     &tcpdns_subsys,
 };
 
@@ -141,7 +141,7 @@ int main(int argc, char **argv)
             pidfile = optarg;
             break;
         case 'v':
-            puts(redsocks_version);
+            puts("redsocks.git/release-0.65-50-g09ffb10 OpenSSL-unclean");
             printf("Built with libevent-%s\n", LIBEVENT_VERSION);
             printf("Runs  with libevent-%s\n", event_get_version());
             if (LIBEVENT_VERSION_NUMBER != event_get_version_number()) {
